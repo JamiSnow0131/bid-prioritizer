@@ -1,0 +1,40 @@
+Bid_ID,Client_Name,Client_Type,Payment_History,Project_Type,Project_Fit, Project_Value ,Timeline_Pressure,Competitor_Count,Estimating_Team_Capacity,Crew_Needed, Crew_Available ,Specialist,Specialist_Type,Bid_Outcome
+B-101,Coastal Industrial Partners,New,Unknown,Tenant Fit-Out,Core," $681,000 ",Rushed,2,75,7, 7 ,No,,Lost
+B-102,Fairview Development,Repeat,Established-Good,Warehouse,Core," $631,000 ",Normal,4,50,5, 6 ,No,,Won
+B-103,Oakcrest Properties,Repeat,Established-Good,Tenant Fit-Out,Core," $721,000 ",Normal,7,50,7, 3 ,Yes,Elevator/lift,Lost
+B-104,Summit Ridge Ventures,New,Unknown,Retail Buildout,Core," $646,000 ",Normal,4,25,5, 8 ,Yes,Structural Steel Erector,Won
+B-105,Redgate Industrial LLC,New,Flagged-Slow,Light Industrial,Core," $514,000 ",Rushed,2,100,7, 8 ,No,,Won
+B-106,Delmarva Retail Partners,Repeat,Established-Good,Tenant Fit-Out,Core," $615,000 ",Normal,6,50,7, 9 ,Yes,Glazing,Won
+B-107,Fairview Development,Repeat,Established-Good,Warehouse,Core," $366,000 ",Normal,5,25,3, 6 ,No,,Lost
+B-108,Delmarva Retail Partners,Repeat,Established-Good,Retail Buildout,Core," $414,000 ",Normal,5,50,7, 9 ,No,,Lost
+B-109,Foxglove Realty,New,Unknown,Light Industrial,Core," $1,219,000 ",Normal,6,50,10, 11 ,Yes,High-volage,Lost
+B-110,Meridian Property Group,Repeat,Established-Good,Tenant Fit-Out,Core," $809,000 ",Rushed,2,75,10, 10 ,No,,Won
+B-111,Redgate Industrial LLC,New,Unknown,Tenant Fit-Out,Core," $1,260,000 ",Normal,7,50,8, 9 ,No,,Won
+B-112,Oakcrest Properties,Repeat,Established-Good,Retail Buildout,Core," $1,384,000 ",Normal,4,25,8, 8 ,Yes,Fire suppression,Won
+B-113,Delmarva Retail Partners,Repeat,Established-Good,Warehouse,Core," $677,000 ",Normal,5,50,5, 1 ,No,,Lost
+B-114,Harborview Retail Trust,New,Unknown,Retail Buildout,Core," $1,004,000 ",Normal,3,25,8, 11 ,Yes,Elevator/lift,Won
+B-115,Delmarva Retail Partners,Repeat,Established-Good,Retail Buildout,Core," $371,000 ",Normal,2,25,3, 6 ,Yes,Fire suppression,Won
+B-116,Kestrel Land Co,New,Unknown,Warehouse,Core," $1,318,000 ",Normal,6,50,8, 9 ,No,,Won
+B-117,Foxglove Realty,New,Unknown,Light Industrial,Core," $296,000 ",Normal,2,25,3, 2 ,No,,Lost
+B-118,Nexus Logistics Holdings,New,Unknown,Retail Buildout,Core," $1,038,000 ",Normal,7,50,9, 11 ,Yes,Elevator/lift,Won
+B-119,Delmarva Retail Partners,Repeat,Established-Good,Retail Buildout,Core," $330,000 ",Normal,4,50,3, 3 ,No,,Won
+B-120,Foxglove Realty,New,Unknown,Retail Buildout,Core," $1,315,000 ",Rushed,4,75,8, 7 ,No,,Lost
+B-121,Oakcrest Properties,Repeat,Established-Good,Warehouse,Core," $694,000 ",Normal,3,25,5, 7 ,Yes,Structural Steel Erector,Won
+B-122,Meridian Property Group,Repeat,Established-Good,Retail Buildout,Core," $334,000 ",Normal,2,25,3, 4 ,No,,Lost
+B-123,Nexus Logistics Holdings,New,Flagged-Slow,Tenant Fit-Out,Core," $610,000 ",Normal,3,25,6, 9 ,No,,Lost
+B-124,Elmcroft Holdings,New,Unknown,Retail Buildout,Core," $547,000 ",Normal,2,50,6, 7 ,Yes,Elevator/lift,Won
+B-125,Fairview Development,Repeat,Established-Good,Light Industrial,Core," $228,000 ",Normal,4,50,4, 4 ,No,,Won
+B-126,Meridian Property Group,Repeat,Established-Good,Retail Buildout,Core," $714,000 ",Rushed,4,100,5, 1 ,No,,Lost
+B-127,Delmarva Retail Partners,Repeat,Established-Good,Light Industrial,Core," $701,000 ",Rushed,2,100,5, 3 ,No,,Lost
+B-128,Harborview Retail Trust,New,Unknown,Tenant Fit-Out,Core," $1,218,000 ",Rushed,7,100,9, 6 ,No,,Lost
+B-129,Blackfriar Development,New,Unknown,Tenant Fit-Out,Core," $1,011,000 ",Rushed,4,75,9, 5 ,No,,Lost
+B-130,Cedarbrook Management,Repeat,Established-Good,Light Industrial,Core," $353,000 ",Normal,3,50,3, 4 ,No,,Won
+B-131,Summit Ridge Ventures,New,Flagged-Slow,Medical Office Buildout,Stretch," $2,348,000 ",Normal,2,50,14, 13 ,Yes,Refrigeration,No-Bid
+B-132,Delmarva Retail Partners,Repeat,Established-Good,Medical Office Buildout,Stretch," $1,602,000 ",Rushed,6,75,14, 11 ,No,,Lost
+B-133,Blackfriar Development,New,Unknown,Medical Office Buildout,Stretch," $2,622,000 ",Rushed,6,75,14, 13 ,No,,Lost
+B-134,Kestrel Land Co,New,Flagged-Slow,Multi-Family Renovation,Stretch," $2,056,000 ",Rushed,2,75,12, 9 ,No,,No-Bid
+B-135,Cedarbrook Management,Repeat,Established-Good,Medical Office Buildout,Stretch," $1,627,000 ",Rushed,2,100,14, 16 ,No,,Lost
+B-136,Coastal Industrial Partners,New,Flagged-Slow,Cold Storage Facility,Stretch," $2,111,000 ",Normal,5,75,15, 17 ,No,,Lost
+B-137,Oakcrest Properties,Repeat,Established-Good,Medical Office Buildout,Stretch," $2,983,000 ",Rushed,6,100,12, 14 ,Yes,Refrigeration,No-Bid
+B-138,Cedarbrook Management,Repeat,Established-Good,Multi-Family Renovation,Stretch," $2,445,000 ",Rushed,4,100,14, 11 ,Yes,Elevator/lift,Lost
+N-1,Oakcrest Properties,Repeat,Established-Good,Warehouse,Core," $980,000 ",Rushed,4,25,10, 15 ,Yes,Structural Steel,
