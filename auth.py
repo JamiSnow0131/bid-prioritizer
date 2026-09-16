@@ -28,7 +28,7 @@ def require_password() -> None:
         st.session_state["authenticated"] = True
         return
 
-    st.title("Wall Whisperers Bid Prioritizer")
+    st.title("Bid Prioritizer")
     password = st.text_input("Password", type="password")
     remember = st.checkbox("Remember me on this device for 30 days", value=True)
 

@@ -12,7 +12,7 @@ from scoring import (
     win_probability,
 )
 
-st.set_page_config(page_title="Wall Whisperers Bid Prioritizer", page_icon="📋", layout="wide")
+st.set_page_config(page_title="Bid Prioritizer", page_icon="📋", layout="wide")
 
 auth.require_password()
 
