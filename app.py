@@ -84,6 +84,16 @@ if "weights" not in st.session_state:
 
 historical_df = load_historical()
 
+
+def next_bid_id_placeholder():
+    if historical_df is None or "bid_id" not in historical_df.columns:
+        return "e.g. B-101"
+    numbers = historical_df["bid_id"].str.extract(r"(\d+)$")[0].dropna().astype(int)
+    if numbers.empty:
+        return "e.g. B-101"
+    return f"e.g. B-{numbers.max() + 1}"
+
+
 st.title("Bid Prioritizer")
 
 tab_new_bid, tab_weights = st.tabs(["New Bid", "Criteria Weights"])
@@ -101,7 +111,7 @@ with tab_new_bid:
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            bid_id = st.text_input("Bid ID")
+            bid_id = st.text_input("Bid ID", placeholder=next_bid_id_placeholder())
             client_name = st.text_input("Client Name")
             client_type = st.selectbox("Client Type", ["Repeat", "New"])
             payment_history = st.selectbox(
