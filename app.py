@@ -73,7 +73,7 @@ if "weights" not in st.session_state:
 
 historical_df = load_historical()
 
-st.title("📋 Wall Whisperers Bid Prioritizer")
+st.title("Bid Prioritizer")
 
 tab_new_bid, tab_weights = st.tabs(["New Bid", "Criteria Weights"])
 
