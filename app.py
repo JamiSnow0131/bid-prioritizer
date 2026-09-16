@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 
+import auth
+import branding
 from scoring import (
     DEFAULT_WEIGHTS,
     band_stats,
@@ -11,6 +13,10 @@ from scoring import (
 )
 
 st.set_page_config(page_title="Wall Whisperers Bid Prioritizer", page_icon="📋", layout="wide")
+
+auth.require_password()
+
+branding.render_header()
 
 HIST_PATH = "data/historical_bids.csv"
 
@@ -194,3 +200,5 @@ with tab_weights:
         st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
     else:
         st.info(f"Add `{HIST_PATH}` to see how weight changes affect historical bid outcomes.")
+
+branding.render_footer()
