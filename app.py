@@ -20,6 +20,17 @@ branding.render_header()
 
 HIST_PATH = "data/historical_bids.csv"
 
+PROJECT_TYPES = [
+    "Tenant Fit-Out",
+    "Warehouse",
+    "Retail Buildout",
+    "Light Industrial",
+    "Cold Storage Facility",
+    "Medical Office Buildout",
+    "Multi-Family Renovation",
+    "Other",
+]
+
 # Raw export column -> internal schema. Handles the source file's spacing/
 # casing quirks (e.g. " Project_Value ", "Estimating_Team_Capacity").
 COLUMN_MAP = {
@@ -98,7 +109,10 @@ with tab_new_bid:
             )
 
         with col2:
-            project_type = st.text_input("Project Type")
+            project_type = st.selectbox("Project Type", PROJECT_TYPES)
+            project_type_other = st.text_input(
+                "Specify Other Project Type", disabled=(project_type != "Other")
+            )
             project_fit = st.selectbox("Project Fit", ["Core", "Stretch"])
             project_value = st.number_input("Project Value ($)", min_value=0, step=1000)
             timeline_pressure = st.selectbox("Timeline Pressure", ["Normal", "Rushed"])
@@ -171,13 +185,19 @@ with tab_weights:
     w = st.session_state.weights
     c1, c2 = st.columns(2)
     with c1:
-        w["client_type"] = st.slider("Client Type", 0.0, 50.0, w["client_type"])
-        w["payment_history"] = st.slider("Payment History", 0.0, 50.0, w["payment_history"])
-        w["project_fit"] = st.slider("Project Fit", 0.0, 50.0, w["project_fit"])
+        w["client_type"] = st.number_input("Client Type", min_value=0.0, value=w["client_type"])
+        w["payment_history"] = st.number_input(
+            "Payment History", min_value=0.0, value=w["payment_history"]
+        )
+        w["project_fit"] = st.number_input("Project Fit", min_value=0.0, value=w["project_fit"])
     with c2:
-        w["timeline_pressure"] = st.slider("Timeline Pressure", 0.0, 50.0, w["timeline_pressure"])
-        w["estimating_capacity"] = st.slider("Estimating Capacity", 0.0, 50.0, w["estimating_capacity"])
-        w["crew"] = st.slider("Crew Availability", 0.0, 50.0, w["crew"])
+        w["timeline_pressure"] = st.number_input(
+            "Timeline Pressure", min_value=0.0, value=w["timeline_pressure"]
+        )
+        w["estimating_capacity"] = st.number_input(
+            "Estimating Capacity", min_value=0.0, value=w["estimating_capacity"]
+        )
+        w["crew"] = st.number_input("Crew Availability", min_value=0.0, value=w["crew"])
 
     total = sum(w.values())
     st.write(f"**Current total: {total:.1f}** (should be 100)")
